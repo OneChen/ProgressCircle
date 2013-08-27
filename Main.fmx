@@ -1,0 +1,82 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object TrackBar1: TTrackBar
+    Height = 24.000000000000000000
+    Orientation = orHorizontal
+    Position.X = 15.000000000000000000
+    Position.Y = 410.000000000000000000
+    TabOrder = 0
+    Width = 291.000000000000000000
+    OnChange = TrackBar1Change
+    object FloatAnimation1: TFloatAnimation
+      AutoReverse = True
+      Duration = 1.000000000000000000
+      Loop = True
+      PropertyName = 'Value'
+      StartValue = 0.000000000000000000
+      StopValue = 100.000000000000000000
+    end
+  end
+  object Circle1: TCircle
+    Align = alCenter
+    Height = 100.000000000000000000
+    Stroke.Color = xFFBFBFBF
+    Width = 100.000000000000000000
+    object Circle2: TCircle
+      Align = alClient
+      Fill.Color = xFFBFBFBF
+      Height = 68.000000000000000000
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      Stroke.Color = xFFBFBFBF
+      Width = 68.000000000000000000
+    end
+    object Arc1: TArc
+      Align = alClient
+      Height = 98.000000000000000000
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Stroke.Color = claWhite
+      Stroke.Thickness = 15.000000000000000000
+      Stroke.Cap = scRound
+      Width = 98.000000000000000000
+      StartAngle = -90.000000000000000000
+      EndAngle = -90.000000000000000000
+    end
+    object Text1: TText
+      Align = alClient
+      Color = claBlack
+      Font.Size = 20.000000000000000000
+      Height = 100.000000000000000000
+      Text = '0%'
+      Width = 100.000000000000000000
+    end
+  end
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 105.000000000000000000
+    Position.Y = 45.000000000000000000
+    TabOrder = 2
+    Text = 'Start'
+    Trimming = ttCharacter
+    Width = 111.000000000000000000
+    OnClick = Button1Click
+  end
+end
